@@ -1,0 +1,37 @@
+:root{
+
+/* COLORS */
+
+--bg:#050505;
+--surface:#111111;
+--surface-light:#181818;
+
+--gold:#FFD700;
+--gold-dark:#d4af37;
+
+--white:#ffffff;
+--text:#f5f5f5;
+--text-secondary:#bdbdbd;
+
+/* SHADOWS */
+
+--shadow-gold:
+0 15px 40px rgba(255,215,0,.18);
+
+--shadow-card:
+0 12px 35px rgba(0,0,0,.35);
+
+/* BORDER */
+
+--radius:24px;
+
+/* TRANSITIONS */
+
+--transition:.35s ease;
+
+/* SPACING */
+
+--section-padding:
+100px 8%;
+
+}

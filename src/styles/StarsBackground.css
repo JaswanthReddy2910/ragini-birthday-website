@@ -1,0 +1,67 @@
+.stars,
+.stars2,
+.stars3{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-2;
+}
+
+.stars{
+    background-image:
+    radial-gradient(circle,#ffffff 1px,transparent 1px);
+    background-size:120px 120px;
+    animation:moveStars 120s linear infinite;
+    opacity:.45;
+}
+
+.stars2{
+    background-image:
+    radial-gradient(circle,#FFD700 1.5px,transparent 1.5px);
+    background-size:220px 220px;
+    animation:moveStars 180s linear infinite reverse;
+    opacity:.25;
+}
+
+.stars3{
+    background-image:
+    radial-gradient(circle,#ffffff 2px,transparent 2px);
+    background-size:300px 300px;
+    animation:twinkle 4s ease-in-out infinite;
+    opacity:.25;
+}
+
+.gradient-glow{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,
+    rgba(255,215,0,.08),
+    transparent 60%);
+    pointer-events:none;
+    z-index:-3;
+}
+
+@keyframes moveStars{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-200px);
+}
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.15;
+}
+
+50%{
+opacity:.45;
+}
+
+}
